@@ -30,35 +30,35 @@ public class Main
 	
 	public static void main(String[] args)
 	{
-		System.out.println("Hello world");
+		// System.out.println("Hello world");
 		
 		
 		Main m = new Main();
 
-		m.doDogStuff();
+		// m.doDogStuff();
 
-		m.doCatStuff();
+		// m.doCatStuff();
 
-		Dog nuala = new Dog("Nuala");
-		nuala.speak();
+		// Dog nuala = new Dog("Nuala");
+		// nuala.speak();
 
-		Cat atuma = new Cat("Atuma");
-		atuma.speak();
+		// Cat atuma = new Cat("Atuma");
+		// atuma.speak();
 
-		Animal larry = new Dog("Larry");
-		larry.speak();
+		// Animal larry = new Dog("Larry");
+		// larry.speak();
 
 
-		larry = new Cat("TopCat");
-		larry.speak();
+		// larry = new Cat("TopCat");
+		// larry.speak();
 
-		Animal a = new Dog("A");
-		Animal b = new Dog("B");
-		Animal c = a;
-		a.setName("G");
+		// Animal a = new Dog("A");
+		// Animal b = new Dog("B");
+		// Animal c = a;
+		// a.setName("G");
 
-		System.out.println(a.getName());
-		System.out.println("C: " + c.getName());
+		// System.out.println(a.getName());
+		// System.out.println("C: " + c.getName());
 		
 
 

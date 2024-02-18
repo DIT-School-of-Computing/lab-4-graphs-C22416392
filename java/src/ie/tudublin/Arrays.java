@@ -95,8 +95,16 @@ public class Arrays extends PApplet
 	
 	public void draw()
 	{	
+		int graph_height = height - 100;
+		int graph_width = width - 100;
+		int bar_x1;
+		int bar_y1;
+		
 
 		background(0);
+
+
+
 		float w = width / (float)months.length;
 		for(int i = 0 ; i < months.length ;  i ++)
 		{
