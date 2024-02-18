@@ -117,7 +117,7 @@ public class Arrays extends PApplet
 			bar_x1 = (int) map1(x, 0, width, graph_margin, width - graph_margin);
 			bar_y2 = (int) map1(-rainfall[i], 0, height, graph_margin, height - graph_margin);
 			// rect(x, bar_y1, bar_x2, -rainfall[i]);
-			rect(bar_x1, bar_y1, bar_x2, bar_y2);
+			rect(bar_x1, bar_y1, w2, bar_y2);
 		}
 	}
 }
