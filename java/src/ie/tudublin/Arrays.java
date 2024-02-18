@@ -95,21 +95,29 @@ public class Arrays extends PApplet
 	
 	public void draw()
 	{	
-		int graph_height = height - 100;
-		int graph_width = width - 100;
-		int bar_x1;
-		int bar_y1;
+		int graph_margin = 40;
+		float w = width / (float)months.length;
+		float w2 = map1(w, 0, width, width + graph_margin, graph_margin);
 		
-
+		int bar_x1, 
+			bar_y1 = height - graph_margin, 
+			bar_x2 = (int) w,
+			bar_y2;
+		
+		
 		background(0);
 
 
 
-		float w = width / (float)months.length;
+		
 		for(int i = 0 ; i < months.length ;  i ++)
 		{
 			float x = map1(i, 0, months.length, 0, width);
-			rect(x, height, w, -rainfall[i]);
+
+			bar_x1 = (int) map1(x, 0, width, width + graph_margin, graph_margin);
+			bar_y2 = (int) map1(-rainfall[i], 0, height, graph_margin, height - graph_margin);
+			// rect(x, bar_y1, bar_x2, -rainfall[i]);
+			rect(bar_x1, bar_y1, bar_x2, bar_y2);
 		}
 	}
 }
